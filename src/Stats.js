@@ -18,7 +18,7 @@
  *
  */
 
-var Stats = function () {
+var Stats = function (enabled) {
 
 	var _mode = 0, _modesCount = 2, _container,
 	_frames = 0, _time = new Date().getTime(), _timeLastFrame = _time, _timeLastSecond = _time,
@@ -233,6 +233,8 @@ var Stats = function () {
 		},
 
 		update: function () {
+		  
+		  if (!enabled) return;
 
 			_frames ++;
 
