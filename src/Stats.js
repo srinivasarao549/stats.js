@@ -223,7 +223,7 @@ var Stats = function () {
 		domElement: _container,
 		
 		showMode: function(index) {
-		  for (var i = 0; i <= index; i++) {
+		  for (var i = 0; i < index; i++) {
 		    swapMode();
 		  }
 		},
