@@ -221,6 +221,16 @@ var Stats = function () {
 	return {
 
 		domElement: _container,
+		
+		showMode: function(index) {
+		  for (var i = 0; i <= index; i++) {
+		    swapMode();
+		  }
+		},
+		
+		start: function() {
+		  _timeLastFrame = new Date().getTime();
+		},
 
 		update: function () {
 
